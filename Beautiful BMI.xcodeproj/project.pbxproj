@@ -9,19 +9,22 @@
 /* Begin PBXBuildFile section */
 		34C6FB93271357A50036AC50 /* Beautiful_BMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FB83271357A40036AC50 /* Beautiful_BMIApp.swift */; };
 		34C6FB94271357A50036AC50 /* Beautiful_BMIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FB83271357A40036AC50 /* Beautiful_BMIApp.swift */; };
-		34C6FB95271357A50036AC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FB84271357A40036AC50 /* ContentView.swift */; };
-		34C6FB96271357A50036AC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FB84271357A40036AC50 /* ContentView.swift */; };
+		34C6FB95271357A50036AC50 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FB84271357A40036AC50 /* HeightView.swift */; };
+		34C6FB96271357A50036AC50 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FB84271357A40036AC50 /* HeightView.swift */; };
 		34C6FB97271357A50036AC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C6FB85271357A50036AC50 /* Assets.xcassets */; };
 		34C6FB98271357A50036AC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C6FB85271357A50036AC50 /* Assets.xcassets */; };
+		34C6FBA22713580D0036AC50 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FBA12713580D0036AC50 /* Controller.swift */; };
+		34C6FBA32713580D0036AC50 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6FBA12713580D0036AC50 /* Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34C6FB83271357A40036AC50 /* Beautiful_BMIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beautiful_BMIApp.swift; sourceTree = "<group>"; };
-		34C6FB84271357A40036AC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34C6FB84271357A40036AC50 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		34C6FB85271357A50036AC50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C6FB8A271357A50036AC50 /* Beautiful BMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beautiful BMI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C6FB90271357A50036AC50 /* Beautiful BMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beautiful BMI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C6FB92271357A50036AC50 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		34C6FBA12713580D0036AC50 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				34C6FB83271357A40036AC50 /* Beautiful_BMIApp.swift */,
-				34C6FB84271357A40036AC50 /* ContentView.swift */,
+				34C6FB84271357A40036AC50 /* HeightView.swift */,
+				34C6FBA12713580D0036AC50 /* Controller.swift */,
 				34C6FB85271357A50036AC50 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -176,7 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34C6FB95271357A50036AC50 /* ContentView.swift in Sources */,
+				34C6FBA22713580D0036AC50 /* Controller.swift in Sources */,
+				34C6FB95271357A50036AC50 /* HeightView.swift in Sources */,
 				34C6FB93271357A50036AC50 /* Beautiful_BMIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34C6FB96271357A50036AC50 /* ContentView.swift in Sources */,
+				34C6FBA32713580D0036AC50 /* Controller.swift in Sources */,
+				34C6FB96271357A50036AC50 /* HeightView.swift in Sources */,
 				34C6FB94271357A50036AC50 /* Beautiful_BMIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

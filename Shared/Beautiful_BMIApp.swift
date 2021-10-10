@@ -11,7 +11,9 @@ import SwiftUI
 struct Beautiful_BMIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                HeightView(controller: Controller())
+            }
         }
     }
 }
