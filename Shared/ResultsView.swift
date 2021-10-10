@@ -1,38 +1,34 @@
 //
-//  HeightView.swift
-//  Shared
+//  ResultsView.swift
+//  Beautiful BMI
 //
 //  Created by Harsh Chaturvedi on 10/10/21.
 //
 
 import SwiftUI
 
-struct HeightView: View {
+struct ResultsView: View {
     @ObservedObject var controller: Controller
     var body: some View {
         GeometryReader {geo in
             VStack {
                 
-                Text("How High Are You?")
+                Text("Here's your BMI!")
                     .font(Font.title.weight(.light))
-                Text("Enter your height!")
+                Text("Your BMI is: \(controller.bmi, specifier:"%.2f")")
                     .font(.body)
                     .fontWeight(.bold)
                 Spacer()
                 
-                Stepper("\(controller.height) cm", value: $controller.height)
-                
-                Spacer()
-                
-                Image("height")
+                Image("results")
                     .resizable()
                     .scaledToFit()
                 
                 Spacer()
                 NavigationLink {
-                    WeightView(controller: controller)
+                    HeightView(controller: controller)
                 } label: {
-                    Text("Next")
+                    Text("Start Again")
                         .foregroundColor(.white)
                         .padding()
                         .background(
@@ -42,10 +38,10 @@ struct HeightView: View {
                                     color: Color.black.opacity(0.4),
                                     radius: 40, x: 0, y: 12
                                 )
-                                .frame(width: abs(geo.size.width))
+                                .frame(width: abs(geo.size.width - 40))
                         )
                 }
             }
-        }.padding()
+        }
     }
 }

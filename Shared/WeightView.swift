@@ -1,5 +1,5 @@
 //
-//  HeightView.swift
+//  WeightView.swift
 //  Shared
 //
 //  Created by Harsh Chaturvedi on 10/10/21.
@@ -7,30 +7,30 @@
 
 import SwiftUI
 
-struct HeightView: View {
+struct WeightView: View {
     @ObservedObject var controller: Controller
     var body: some View {
         GeometryReader {geo in
             VStack {
                 
-                Text("How High Are You?")
+                Text("How Heavy Are You?")
                     .font(Font.title.weight(.light))
-                Text("Enter your height!")
+                Text("Enter your weight!")
                     .font(.body)
                     .fontWeight(.bold)
                 Spacer()
                 
-                Stepper("\(controller.height) cm", value: $controller.height)
+                Stepper("\(controller.weight) kg", value: $controller.weight)
                 
                 Spacer()
                 
-                Image("height")
+                Image("weight")
                     .resizable()
                     .scaledToFit()
                 
                 Spacer()
                 NavigationLink {
-                    WeightView(controller: controller)
+                    ResultsView(controller: controller)
                 } label: {
                     Text("Next")
                         .foregroundColor(.white)
@@ -42,7 +42,7 @@ struct HeightView: View {
                                     color: Color.black.opacity(0.4),
                                     radius: 40, x: 0, y: 12
                                 )
-                                .frame(width: abs(geo.size.width))
+                                .frame(width: abs(geo.size.width - 40))
                         )
                 }
             }
